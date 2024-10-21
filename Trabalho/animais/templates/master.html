@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <link rel="stylesheet" href="{% static 'mystyles.css' %}">
+</head>
+<body>
+  <div class="topnav">
+        <a href="/">Inicio</a>
+        <a href="/animais">Animais</a>
+  </div>
+{% block content %}
+{% endblock %}
+</div>
+</body>
+</html>

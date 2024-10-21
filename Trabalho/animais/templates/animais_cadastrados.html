@@ -1,0 +1,16 @@
+{%extends "master.html" %}
+
+{% block title %}
+  Trabalho A3 - Animais Cadastrados
+{% endblock %}
+{% block content %}
+<div class="mycard">
+<p><a href="/">Inicio</a></p>
+<h1>Animais</h1>
+<ul>
+  {% for x in meusanimais %}
+    <li><a href="detalhes/{{x.id}}">{{ x.especie }} {{ x.raca }} {{x.cor}}</a></li>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

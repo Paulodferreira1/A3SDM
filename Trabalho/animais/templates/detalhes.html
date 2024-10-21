@@ -1,0 +1,14 @@
+{%extends "master.html" %}
+
+{% block title %}
+Detalhes sobre {{meusanimais.especie}} {{meusanimais.raca}} {{meusanimais.cor}}
+{% endblock %}
+
+{% block content %}
+<div class="mycard">
+<h1>{{ meuanimal.especie }} {{ meuanimal.raca }} {{meuanimal.cor}}</h1>
+  
+<p>Voltar para <a href="/animais">animais</a></p>
+</div>
+{% endblock %}
+
